@@ -14,6 +14,8 @@
 /* Переменные */
 $fz: 0.95em;
 
+/*************************/
+
 .container {
 	position: relative;
 	min-height: 750px;
@@ -109,7 +111,7 @@ $fz: 0.95em;
 .sing {
 
 	&_btn {
-		width: 80px;
+		min-width: 80px;
 		padding: 6px 0;
 
 		font-size: 0.75em;
@@ -161,7 +163,7 @@ $fz: 0.95em;
 .box-btn {}
 
 .btn-buy {
-	width: 150px;
+	min-width: 150px;
 	margin-right: 30px;
 	padding: 22px 0;
 
@@ -177,7 +179,7 @@ $fz: 0.95em;
 }
 
 .btn-free {
-	width: 160px;
+	min-width: 160px;
 	padding: 22px 0;
 
 	color: #061e37;
@@ -212,7 +214,7 @@ $fz: 0.95em;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	display: block;	
+	display: block;
 	min-height: 336px;
 	content: "";
 
@@ -225,17 +227,17 @@ $fz: 0.95em;
 	z-index: 1;
 	top: 35%;
 	left: 40%;
-	
-	&__square {		
-		position: relative;		
+
+	&__square {
+		position: relative;
 		width: 60px;
 		margin-left: 22px;
 		margin-bottom: 22px;
 		padding: 30px 0;
-	
+
 		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 		border-radius: 5px;
-		background-color: #061e37;	
+		background-color: #061e37;
 		cursor: pointer;
 	}
 
@@ -249,9 +251,9 @@ $fz: 0.95em;
 		display: block;
 
 		border-top: 6px solid transparent;
-    border-bottom: 6px solid transparent;
+		border-bottom: 6px solid transparent;
 		border-left: 10px solid #fff;
-		cursor: pointer;		
+		cursor: pointer;
 	}
 
 	&__title {
@@ -260,7 +262,113 @@ $fz: 0.95em;
 		color: #061e37;
 		font-size: 0.75em;
 		font-weight: 700;
-		text-transform: uppercase;		
-		
+		text-transform: uppercase;
+
 	}
+}
+
+.content-top {
+	margin: 100px 0;
+}
+
+.easy {
+	margin-bottom: 100px;
+
+	text-align: center;
+
+	&__title {
+		margin-top: 0;
+		margin-bottom: 14px;
+
+		color: #061e37;
+		font-size: 2.85em;
+		font-weight: 700;
+	}
+
+	&__subtitle {
+		display: block;
+		margin-bottom: 20px;
+
+		color: #b0bec5;
+		font-size: 1.6em;
+		font-weight: 400;
+	}
+
+	&__text {
+		width: 44%;
+		margin: 0 auto;
+
+
+		color: #b0bec5;
+		font-size: 0.95em;
+		line-height: 1.5em;
+	}
+}
+
+.category {
+
+	&__list {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		margin-bottom: 75px;
+	}
+
+	&__item {
+		flex-basis: 344px/1300px*100%;
+		margin-right: 150px;
+
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 0 auto;
+
+		}
+	}
+
+	&__item:last-child {
+		margin-right: 0;
+	}
+
+	&__item:nth-child(2) h3 {
+		margin-top: 35px;
+	}
+
+	&__title {
+		margin-top: 40px;
+		margin-bottom: 20px;
+
+		color: #061e37;
+		font-size: 1.3em;
+		text-align: center;
+		line-height: 1.5em;
+	}
+
+	&__text {
+		margin: 0;
+
+		color: #78909c;
+		font-size: 0.90em;
+		line-height: 1.5em;
+		text-align: center;
+
+	}
+
+	&__btn {
+		display: block;
+		min-width: 150px;
+		margin: 0 auto;
+		padding: 22px 0;
+
+		color: #ffffff;		
+		font-size: 0.90em;
+		font-weight: 700;
+		text-transform: uppercase;
+
+		box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+		border-radius: 5px;
+		background-color: #1de9b6;
+		cursor: pointer;
+	}
+
 }
